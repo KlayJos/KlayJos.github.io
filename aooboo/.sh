@@ -17,3 +17,6 @@ git push
 #git commit -m "%msg%"
 #git push
 #pause
+
+
+#使用方式→ 在終端機中輸入: ./文件名(含副檔名)
