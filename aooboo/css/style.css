@@ -1,6 +1,6 @@
 @charset "UTF-8";
 *{
-    /* touch-action: pan-x pan-y; /* 禁止觸控設備的手勢 */
+    touch-action: pan-x pan-y; /* 禁止觸控設備的手勢 */
     box-sizing: border-box; /* 盒子模型 */
     margin: 0;
     padding: 0;
