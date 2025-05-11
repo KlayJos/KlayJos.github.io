@@ -1,25 +1,21 @@
 @charset "UTF-8";
 *{
-    touch-action: pan-x pan-y; /* 禁止觸控設備的手勢 */
+    /* touch-action: pan-x pan-y; /* 禁止觸控設備的手勢 */
     box-sizing: border-box; /* 盒子模型 */
     margin: 0;
     padding: 0;
     max-width: 100%; /* 限制最大寬度 */
 }
 html{
-
     /*width: 100%;*/
     font-size: 10px;
     scroll-behavior: smooth; /* 平滑滾動效果 */
 }
 img, video{
-    max-width: 100%; /* 限制最大寬度 */
     height: auto; /* 高度自適應 */
     display: block; /* 讓圖片和視頻元素成為塊級元素 */
 }
 body{
-
-
     background-color: grey;
     background-position: center; /* 背景圖片置中 */
     background-repeat: no-repeat; /* 不重複 */
