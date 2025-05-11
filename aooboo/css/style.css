@@ -18,7 +18,7 @@ img, video{
     display: block; /* 讓圖片和視頻元素成為塊級元素 */
 }
 body{
-    background-color: grey;
+    background-color: black;
     background-position: center; /* 背景圖片置中 */
     background-repeat: no-repeat; /* 不重複 */
 }
@@ -146,11 +146,15 @@ nav ul li ul li a{
 
 /* 主要內容 */
 main{
-    padding-top: var(--header-height, 0px); /* 讓主內容區域距離 header 一定的距離 */
+    margin-top: var(--header-height, 0px); /* 讓主內容區域距離 header 一定的距離 */
     /* margin-top: 1vw; /* 讓主內容區域距離 header 一定的距離 */
     transform: translate(0, -0.2rem);
-    background-color: black;
+    background-color: gray;
 }
+section{
+    background-color: transparent; /* 背景:透明 */
+}
+
 section .banner{
     display: flex; /* 彈性盒子 */
     flex-direction: column; /* 垂直排列 */
