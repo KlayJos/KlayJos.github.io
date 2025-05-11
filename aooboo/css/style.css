@@ -163,7 +163,7 @@ section .banner{
     background-size: cover; /* 背景圖片覆蓋整個元素 */
     height: 41vw;
     width: 100%; /* 讓寬度覆蓋整個 viewport */
-    height: 100vh;
+    height: 92vh;
 }
 section .banner h2{
     font-size: 7vw;
