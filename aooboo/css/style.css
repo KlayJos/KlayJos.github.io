@@ -152,7 +152,7 @@ main{
     background-color: gray;
 }
 section{
-    background-color: transparent; /* 背景:透明 */
+    background-color: gray; /* 背景 */
 }
 section .banner{
     display: flex; /* 彈性盒子 */
