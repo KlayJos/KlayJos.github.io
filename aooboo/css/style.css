@@ -1,10 +1,10 @@
 @charset "UTF-8";
 *{
-    /* touch-action: pan-x pan-y; /* 禁止觸控設備的手勢 */
+    /* touch-action: pan-x pan-y; /* 禁止觸控設備的手勢(縮放) */
     box-sizing: border-box; /* 盒子模型 */
     margin: 0;
     padding: 0;
-    max-width: 100%; /* 限制最大寬度 */
+    max-width: 100%; /* 限制最大寬度,防止溢出 */
 }
 html{
     /*width: 100%;*/
@@ -27,39 +27,38 @@ li{
 header{
     display: flex; /* 彈性盒子 */
     position: relative; /* 讓 header 內部元素相對於 header 定位 */
-    flex-wrap: wrap; /* 允許換行 */
+    white-space: nowrap; /* 文字不允許換行 */
     flex-direction: column; /* 垂直排列 */
     align-items: baseline;     /* 靠邊居中 */
     justify-content: center; /* 垂直居中（如果需要） */
-    padding: 0.6rem 0rem 0rem;
-    /* margin: 0.1rem 1rem; */
-    /* border: 8px solid black; */
     background-color: black;
 }
 /* LOGO */
 header .logo{
     position: relative;
-    left: 0.4vw;
+    top: 0.4vw;
+    left: 1.2vw;
     display: flex; /* 彈性盒子 */
     flex-direction: column; /* 垂直排列 */
     align-items: center; /* 垂直置中 */
-    padding: 0rem;
-    margin: 0rem;
+    padding: 0;
+    margin: 0;
     /* border: 8px solid black; */
     /* background-color: red; */
-    max-width: 14rem;  /* 限制最大寬度,不占全屏寬 */
+    max-width: fit-content;  /* 限制最大寬度,不占全屏寬 */
+    
 }
 header .logo img{
     cursor: pointer;
     position: relative;
     right: 0.2vw;
-    width: fit-content; /* 讓圖片寬度自適應內容 */
-    margin-bottom: 0.6rem;
+    width: 10vw; /* 讓圖片寬度自適應內容 */
+    margin-bottom: 0.6vw;
 }
 header .logo a{
     cursor: pointer; /* 滑鼠移到上面時變成手指形狀 */
-    font-size: 1.8rem;
-    letter-spacing: 0.2rem;
+    font-size: 1.8vw;
+    letter-spacing: 0.2rem; /* 調整字母間距 */
     /* text-align: center; */
     text-decoration: none;
     color: #FFFF00;
