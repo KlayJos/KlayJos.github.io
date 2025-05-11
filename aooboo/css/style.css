@@ -146,9 +146,10 @@ nav ul li ul li a{
 
 /* 主要內容 */
 main{
-    margin-top: var(--header-height, 0px); /* 讓主內容區域距離 header 一定的距離 */
+    padding-top: var(--header-height, 0px); /* 讓主內容區域距離 header 一定的距離 */
     /* margin-top: 1vw; /* 讓主內容區域距離 header 一定的距離 */
     transform: translate(0, -0.2rem);
+    background-color: black;
 }
 section .banner{
     display: flex; /* 彈性盒子 */
