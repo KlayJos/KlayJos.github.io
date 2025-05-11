@@ -1,8 +1,19 @@
 *{
+    /* touch-action: pan-x pan-y; /* 禁止觸控滾動 */
+    /* overflow-x: hidden; /* 隱藏水平滾動條 */
+    box-sizing: border-box; /* 盒子模型 */
     margin: 0;
     padding: 0;
+    /* max-width: 100%; /* 限制最大寬度 */
 }
 html{
+    /* touch-action: pan-x pan-y; /* 禁止觸控滾動 */
+    /* overflow-x: hidden; /* 隱藏水平滾動條 */
+    box-sizing: border-box; /* 盒子模型 */
+    margin: 0;
+    padding: 0;
+    /* max-width: 100%; /* 限制最大寬度 */
+
     /*width: 100%;*/
     font-size: 10px;
     scroll-behavior: smooth; /* 平滑滾動效果 */
@@ -16,6 +27,13 @@ video{
     height: auto;
 }
 body{
+    /* touch-action: pan-x pan-y; /* 禁止觸控滾動 */
+    /* overflow-x: hidden; /* 隱藏水平滾動條 */
+    box-sizing: border-box; /* 盒子模型 */
+    margin: 0;
+    padding: 0;
+    /* max-width: 100%; /* 限制最大寬度 */
+
     background-color: grey;
     background-position: center; /* 背景圖片置中 */
     background-repeat: no-repeat; /* 不重複 */
