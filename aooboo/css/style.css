@@ -1,13 +1,13 @@
 @charset "UTF-8";
 *{
-    /* touch-action: pan-x pan-y; /* 禁止觸控設備的手勢 */
+    touch-action: pan-x pan-y; /* 禁止觸控設備的手勢 */
     box-sizing: border-box; /* 盒子模型 */
     margin: 0;
     padding: 0;
     max-width: 100%; /* 限制最大寬度 */
 }
 html{
-    /* touch-action: pan-x pan-y; /* 禁止觸控設備的手勢 */
+    touch-action: pan-x pan-y; /* 禁止觸控設備的手勢 */
     box-sizing: border-box; /* 盒子模型 */
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@ img, video{
     display: block; /* 讓圖片和視頻元素成為塊級元素 */
 }
 body{
-    /* touch-action: pan-x pan-y; /* 禁止觸控設備的手勢 */
+    touch-action: pan-x pan-y; /* 禁止觸控設備的手勢 */
     box-sizing: border-box; /* 盒子模型 */
     margin: 0;
     padding: 0;
