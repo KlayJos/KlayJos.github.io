@@ -25,12 +25,18 @@ li{
 }
 /* 開頭 */
 header{
+    top: 0;
+    left: 0;
     display: flex; /* 彈性盒子 */
-    position: relative; /* 讓 header 內部元素相對於 header 定位 */
+    position: fixed; /* 定位 */
+    z-index: 100; /* 提升層級, 避免被覆蓋 */
     white-space: nowrap; /* 文字不允許換行 */
     flex-direction: column; /* 垂直排列 */
     align-items: baseline;     /* 靠邊居中 */
     justify-content: center; /* 垂直居中（如果需要） */
+    background-size: cover; /* 背景圖片覆蓋整個元素 */
+    width: 100%; /* 讓寬度覆蓋整個 viewport */
+    height: fit-content; /* 讓高度自適應內容 */
     background-color: black;
 }
 /* LOGO */
@@ -72,6 +78,12 @@ header p{
     font-size: 1.4rem;
     color: #FFF;
 }
+main{
+    margin-top: var(--header-height, 0px);
+    /* margin-top: 15vw; /* 讓主內容區域距離 header 一定的距離 */
+    padding: 0 1vw; /* 左右邊距 1.2vw */
+}
+
 /* 菜單 */
 nav{
     position: absolute; /* 讓 nav 內部元素相對於 nav 定位 */
@@ -144,9 +156,8 @@ section .banner{
     background-repeat: no-repeat; /* 背景圖片不重複 */
     background-position: center; /* 背景圖片置中 */
     background-size: cover; /* 背景圖片覆蓋整個元素 */
-
     height: 41vw;
-    width: 100%;
+    width: 100%; /* 讓寬度覆蓋整個 viewport */
 }
 section .banner h2{
     font-size: 7vw;
