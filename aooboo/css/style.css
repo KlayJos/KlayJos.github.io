@@ -160,7 +160,7 @@ section .banner{
     background-size: cover; /* 背景圖片覆蓋整個元素 */
 
     height: 41vw;
-    width: 100vw;
+    width: 100%;
 }
 section .banner h2{
     font-size: 7vw;
