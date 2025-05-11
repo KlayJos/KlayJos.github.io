@@ -51,21 +51,24 @@ header .logo{
     margin: 0;
     /* border: 8px solid black; */
     /* background-color: red; */
-    max-width: fit-content;  /* 限制最大寬度,不占全屏寬 */
+    width: fit-content;  /* 限制最大寬度,不占全屏寬 */
     
 }
 header .logo img{
     cursor: pointer;
     position: relative;
     right: 0.2vw;
-    width: 10vw; /* 讓圖片寬度自適應內容 */
-    margin-bottom: 0.6vw;
+    width: 4vw; /* 讓圖片寬度自適應內容 */
 }
-header .logo a{
-    cursor: pointer; /* 滑鼠移到上面時變成手指形狀 */
+header .logo h1{
     font-size: 1.8vw;
     letter-spacing: 0.2rem; /* 調整字母間距 */
     /* text-align: center; */
+    padding: 0;
+    margin: 0;
+}
+header .logo a{
+    cursor: pointer; /* 滑鼠移到上面時變成手指形狀 */
     text-decoration: none;
     color: #FFFF00;
 }
@@ -75,15 +78,9 @@ header .logo a:hover{
 header p{
     position: relative; /* 讓 p 內部元素相對於 p 定位 */
     left: 0.4vw;
-    font-size: 1.4rem;
+    font-size: 1.2vw;
     color: #FFF;
 }
-main{
-    margin-top: var(--header-height, 0px);
-    /* margin-top: 15vw; /* 讓主內容區域距離 header 一定的距離 */
-    padding: 0 1vw; /* 左右邊距 1.2vw */
-}
-
 /* 菜單 */
 nav{
     position: absolute; /* 讓 nav 內部元素相對於 nav 定位 */
@@ -145,6 +142,12 @@ nav ul li ul li a{
     margin: 0.4rem 0.6rem;
 }
 
+/* 主要內容 */
+main{
+    margin-top: var(--header-height, 0px); /* 讓主內容區域距離 header 一定的距離 */
+    /* margin-top: 1vw; /* 讓主內容區域距離 header 一定的距離 */
+    transform: translate(0, -0.2rem);
+}
 section .banner{
     display: flex; /* 彈性盒子 */
     flex-direction: column; /* 垂直排列 */
