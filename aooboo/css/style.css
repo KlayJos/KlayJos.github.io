@@ -1,3 +1,5 @@
+/* index.html */
+
 @charset "UTF-8";
 *{
     /* touch-action: pan-x pan-y; /* 禁止觸控設備的手勢(縮放) */
@@ -58,7 +60,7 @@ header .logo img{
     cursor: pointer;
     position: relative;
     right: 0.2vw;
-    width: 4vw; /* 讓圖片寬度自適應內容 */
+    width: 4vw;
 }
 header .logo h1{
     font-size: 1.8vw;
@@ -161,6 +163,7 @@ section .banner{
     background-size: cover; /* 背景圖片覆蓋整個元素 */
     height: 41vw;
     width: 100%; /* 讓寬度覆蓋整個 viewport */
+    height: 100vh;
 }
 section .banner h2{
     font-size: 7vw;
@@ -279,14 +282,14 @@ section .info{
         top: 0%;                     /* 放在下方 */
         left: 50%;                     /* 對齊父級元素中間 */
         transform: translateX(-50%);   /* 往左移動自身元素的一半，達成完美居中 */
-        width: 100vw;           /* 讓寬度覆蓋整個 viewport */
+        width: 100%;           /* 讓寬度覆蓋整個 viewport */
         margin-top: 1rem;
         border-top: 1px solid #CCCCCC;
         /* border-bottom: 1px solid #CCCCCC; */
         padding: 0 0 0.6rem;
     }
     section .banner{
-        height: 61vh;
+        height: 100vh;
     }
     section .banner h2{
         font-size: 10.5vw;
