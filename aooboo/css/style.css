@@ -20,9 +20,9 @@ img, video{
     display: block; /* 讓圖片和視頻元素成為塊級元素 */
 }
 body{
-    /* background-color: black; */
     background-position: center; /* 背景圖片置中 */
     background-repeat: no-repeat; /* 不重複 */
+    background-color: black; 
 }
 li{
     list-style: none;
@@ -167,7 +167,6 @@ section .banner{
     background-repeat: no-repeat; /* 背景圖片不重複 */
     background-position: center; /* 背景圖片置中 */
     background-size: cover; /* 背景圖片覆蓋整個元素 */
-    height: 41vw;
     width: 100%; /* 讓寬度覆蓋整個 viewport */
     height: 92vh;
 }
@@ -267,14 +266,15 @@ section .info{
     text-indent: 2em;
 }
 .video{
-    width: 800px;
-    margin: 10px 0;
+    width: 100%;
+    height: auto;
+    margin: 1vw auto;
 }
-.footer{
-    margin: 100px 0 0;
-    background: #000000;
-    color: #FFFFFF;
-    padding: 10px 0;
+footer .footer{
+    margin: 10vw 0 0 0;
+    background-color: #000;
+    color: #FFF;
+    padding: 1vw 0;
     text-align: center;
 }
 
@@ -283,7 +283,6 @@ section .info{
 @media screen and (max-width: 765px){   /* 小於指定像素寬度(iPad Mini:寬768px)時執行 */
     nav{
         display: none; /* 隱藏 */
-        /* background-color: red; */
         position: relative;
         top: 0%;                     /* 放在下方 */
         left: 50%;                     /* 對齊父級元素中間 */
