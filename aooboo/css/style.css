@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *{
     touch-action: pan-x pan-y; /* 禁止觸控設備的手勢 */
     box-sizing: border-box; /* 盒子模型 */
@@ -174,6 +175,8 @@ section .banner p:nth-of-type(2){ /* 針對第1個a元素 */
     margin: 1em 0 4em; /* 邊距只能用在p元素，a元素無效 */
 }
 section .banner p:nth-of-type(2) a{ /* 針對第1個a元素 */
+    display: inline-block; /* ！放大需轉塊元素! 讓a元素成為行內塊元素 */
+    transform: scale(1, 1); /* 調整元素放大倍數(設定0可代替隱藏) */
     font-size: 1.4rem;
     text-decoration: none; /* 去除a元素底線 */
     border-bottom: #999 2px solid; /* 底線顏色 */
@@ -187,14 +190,19 @@ section .banner p:nth-of-type(2) a:hover,
 section .banner p:nth-of-type(2) a:focus{ /* 針對第1個a元素:懸停,聚焦 */
     /* text-decoration: none; /* 去除a元素底線 */
     /* border-bottom: none; /* 去除邊框底部 */
-    font-size: 1.6rem;
+    transform: scale(1.2, 1.2); /* 調整元素放大倍數(設定0可代替隱藏) */
     color: #0FF;
     opacity: 1.0; /* 透明度0.0~1.0(透明~不透明) */
     border-bottom: transparent; /* 邊框底部透明化 */
 }
+section .banner p:nth-of-type(2) a:active{   /* banner按鈕的a鏈接元素:點擊 */
+    transform: translate(0, 0); /* 調整元素位置 */
+    /* transform: scale(1, 1); /* 調整元素放大倍數(設定0可代替隱藏) */
+}
+
 
 section .banner p:nth-of-type(3) a{   /* banner按鈕的a鏈接元素 */
-    transform: scale(1,1); /* 放大倍數 */
+    display: inline-block; /* ！放大需轉塊元素! 讓a元素成為行內塊元素 */
     text-decoration: none; /* 去除底線 */
     font-size: 1.8rem;
     padding: 0.4em 0.8em; /* 上下邊距 0.5rem，左右邊距 1.5rem */
@@ -204,24 +212,21 @@ section .banner p:nth-of-type(3) a{   /* banner按鈕的a鏈接元素 */
     background-color: transparent; /* 背景顏色透明 */
     opacity: 0.9; /* 透明度0.0~1.0(透明~不透明) */
     /* background-color: #000000; /* 背景顏色 */
-    transition: all 0.3s ease-in; /* 入慢-動畫效果 */
+    transition: 0.3s ease-in; /* 入慢-動畫效果 */
+}
 
-    &:hover, &:focus{   /* banner按鈕的a鏈接元素:懸停,聚焦 */
-        transform: scale(3,3); /* 放大倍數 */
-        /* padding: 0.8em 1.6em; /* 上下邊距 0.5rem，左右邊距 1.5rem */
-        border-radius: 50px; /* 圓角 */
-        color: #444;
-        background-color: #FFF; /* 背景顏色透明 */
-        opacity: 1.0; /* 透明度0.0~1.0(透明~不透明) */
-    }
-    &:active{   /* banner按鈕的a鏈接元素:點擊 */
-        transform: translate(0x, 10px);
-        padding: 0.4em 0.8em; /* 上下邊距 0.5rem，左右邊距 1.5rem */
-        border-radius: 12px; /* 偏直角 */
-        color: #FFF;
-        background-color: transparent; /* 背景顏色透明 */
-        opacity: 0.9; /* 透明度0.0~1.0(透明~不透明) */
-    }
+section .banner p:nth-of-type(3) a:hover, 
+section .banner p:nth-of-type(3) a:focus{   /* banner按鈕的a鏈接元素:懸停,聚焦 */
+    transform: scale(1.4, 1.4); /* 調整元素放大倍數(設定0可代替隱藏) */
+    /* padding: 0.8em 1.6em; /* 上下邊距 0.5rem，左右邊距 1.5rem */
+    border-radius: 50px; /* 圓角 */
+    color: #444;
+    background-color: #FFF; /* 背景顏色透明 */
+    opacity: 1.0; /* 透明度0.0~1.0(透明~不透明) */
+}
+section .banner p:nth-of-type(3) a:active{   /* banner按鈕的a鏈接元素:點擊 */
+    /* transform: translate(0, 0); /* 調整元素位置 */
+    transform: scale(1.15, 1.15); /* 調整元素放大倍數(設定0可代替隱藏) */
 }
 
 
