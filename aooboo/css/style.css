@@ -20,7 +20,7 @@ img, video{
     display: block; /* 讓圖片和視頻元素成為塊級元素 */
 }
 body{
-    background-color: black;
+    /* background-color: black; */
     background-position: center; /* 背景圖片置中 */
     background-repeat: no-repeat; /* 不重複 */
 }
