@@ -1,5 +1,5 @@
 *{
-    /* touch-action: pan-x pan-y; /* 禁止觸控滾動 */
+    touch-action: none; /* 禁止觸控設備的手勢 */
     overflow-x: hidden; /* 隱藏水平滾動條 */
     box-sizing: border-box; /* 盒子模型 */
     margin: 0;
@@ -7,7 +7,7 @@
     /* max-width: 100%; /* 限制最大寬度 */
 }
 html{
-    /* touch-action: pan-x pan-y; /* 禁止觸控滾動 */
+    touch-action: none; /* 禁止觸控設備的手勢 */
     overflow-x: hidden; /* 隱藏水平滾動條 */
     box-sizing: border-box; /* 盒子模型 */
     margin: 0;
@@ -18,16 +18,13 @@ html{
     font-size: 10px;
     scroll-behavior: smooth; /* 平滑滾動效果 */
 }
-img{
-    max-width: 50%;
-    height: auto;
-}
-video{
-    max-width: 50%;
-    height: auto;
+img, video{
+    max-width: 100%; /* 限制最大寬度 */
+    height: auto; /* 高度自適應 */
+    display: block; /* 讓圖片和視頻元素成為塊級元素 */
 }
 body{
-    /* touch-action: pan-x pan-y; /* 禁止觸控滾動 */
+    touch-action: none; /* 禁止觸控設備的手勢 */
     overflow-x: hidden; /* 隱藏水平滾動條 */
     box-sizing: border-box; /* 盒子模型 */
     margin: 0;
