@@ -3,12 +3,12 @@
 @charset "UTF-8";
 *{
     /* touch-action: pan-x pan-y; /* 禁止觸控設備的手勢(縮放) */
-    /* touch-action: manipulation; /* 只禁止縮放手勢 */
+    touch-action: manipulation; /* 只禁止縮放手勢 */
     box-sizing: border-box; /* 盒子模型 */
     margin: 0;
     padding: 0;
     max-width: 100%; /* 限制最大寬度,防止溢出 */
-    overscroll-behavior: none;  /* 禁止額外滑動（尤其是手機） */
+    /* overscroll-behavior: none;  /* 禁止額外滑動（尤其是手機） */
 }
 html{
     /*width: 100%;*/
