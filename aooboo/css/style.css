@@ -358,10 +358,11 @@ footer .footer{
         background-color: transparent;
         color: white;
         font-size: 4.8vw;
-        width: 7vw;
+        width: 8vw;
         position: absolute;
         top: 0;
         right: 0.1rem;
+        border: none;
     }
     nav{
         display: none; /* 隱藏 */
