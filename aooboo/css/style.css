@@ -42,6 +42,7 @@ header{
     width: 100%; /* 讓寬度覆蓋整個 viewport */
     height: fit-content; /* 讓高度自適應內容 */
     background-color: black;
+    padding: 0;
 }
 /* LOGO */
 header .logo{
@@ -85,12 +86,15 @@ header p{
     font-size: 1.2vw;
     color: white;
 }
+.menu{
+    display: none;
+}
 /* 菜單 */
 nav{
     position: absolute; /* 讓 nav 內部元素相對於 nav 定位 */
     width: auto;
     right: 5vw;
-    top: 4.6em;
+    top: 3vw;
     border: none;
     line-height: 2.4rem;
 }
@@ -338,6 +342,27 @@ footer .footer{
 
 /* 以下為響應式設計(for寬度小的熒幕): */
 @media screen and (max-width: 765px){   /* 小於指定像素寬度(iPad Mini:寬768px)時執行 */
+    header{
+        align-items: center;     /* 靠邊居中 */
+        padding-bottom: 0.4rem;
+    }
+    header .logo{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    header p{
+        display: none;
+    }
+    .menu{
+        display: block;
+        background-color: transparent;
+        color: white;
+        font-size: 4.8vw;
+        width: 7vw;
+        position: absolute;
+        top: 0;
+        right: 0.1rem;
+    }
     nav{
         display: none; /* 隱藏 */
         position: relative;
