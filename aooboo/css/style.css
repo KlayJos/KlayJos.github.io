@@ -8,7 +8,6 @@
     margin: 0;
     padding: 0;
     max-width: 100%; /* 限制最大寬度,防止溢出 */
-    /* overscroll-behavior: none;  /* 禁止額外滑動（尤其是手機） */
 }
 html{
     /*width: 100%;*/
@@ -156,7 +155,7 @@ main{
 section{
     background-color: gray; /* 背景 */
 }
-section .banner{
+section .banner_1{
     display: flex; /* 彈性盒子 */
     flex-direction: column; /* 垂直排列 */
     align-items: center; /* 垂直置中 */
@@ -170,19 +169,19 @@ section .banner{
     width: 100%; /* 讓寬度覆蓋整個 viewport */
     height: 92vh;
 }
-section .banner h2{
+section .banner_1 h2{
     font-size: 7vw;
     letter-spacing: 0.04em; /* 調整字母間距 */
     color: white;
 }
-section .banner p:nth-of-type(1){    /* :nth-of-type(1) 針對第1個p元素 */
+section .banner_1 p:nth-of-type(1){    /* :nth-of-type(1) 針對第1個p元素 */
     font-size: 2.2vw;
     color: #FEF7E6;
 }
-section .banner p:nth-of-type(2){ /* 針對第1個a元素 */
+section .banner_1 p:nth-of-type(2){ /* 針對第1個a元素 */
     margin: 1em 0 4em; /* 邊距只能用在p元素，a元素無效 */
 }
-section .banner p:nth-of-type(2) a{ /* 針對第1個a元素 */
+section .banner_1 p:nth-of-type(2) a{ /* 針對第1個a元素 */
     display: inline-block; /* ！放大需轉塊元素! 讓a元素成為行內塊元素 */
     transform: scale(1, 1); /* 調整元素放大倍數(設定0可代替隱藏) */
     font-size: 1.4rem;
@@ -194,8 +193,8 @@ section .banner p:nth-of-type(2) a{ /* 針對第1個a元素 */
     transition: 0.3s ease-out; /* 入慢-動畫效果 */
 }
 
-section .banner p:nth-of-type(2) a:hover,
-section .banner p:nth-of-type(2) a:focus{ /* 針對第1個a元素:懸停,聚焦 */
+section .banner_1 p:nth-of-type(2) a:hover,
+section .banner_1 p:nth-of-type(2) a:focus{ /* 針對第1個a元素:懸停,聚焦 */
     /* text-decoration: none; /* 去除a元素底線 */
     /* border-bottom: none; /* 去除邊框底部 */
     transform: scale(1.2, 1.2); /* 調整元素放大倍數(設定0可代替隱藏) */
@@ -203,13 +202,13 @@ section .banner p:nth-of-type(2) a:focus{ /* 針對第1個a元素:懸停,聚焦 
     opacity: 1.0; /* 透明度0.0~1.0(透明~不透明) */
     border-bottom: transparent; /* 邊框底部透明化 */
 }
-section .banner p:nth-of-type(2) a:active{   /* banner按鈕的a鏈接元素:點擊 */
+section .banner_1 p:nth-of-type(2) a:active{   /* banner按鈕的a鏈接元素:點擊 */
     transform: translate(0, 0); /* 調整元素位置 */
     /* transform: scale(1, 1); /* 調整元素放大倍數(設定0可代替隱藏) */
 }
 
 
-section .banner p:nth-of-type(3) a{   /* banner按鈕的a鏈接元素 */
+section .banner_1 p:nth-of-type(3) a{   /* banner按鈕的a鏈接元素 */
     display: inline-block; /* ！放大需轉塊元素! 讓a元素成為行內塊元素 */
     text-decoration: none; /* 去除底線 */
     font-size: 1.8rem;
@@ -223,8 +222,8 @@ section .banner p:nth-of-type(3) a{   /* banner按鈕的a鏈接元素 */
     transition: 0.3s ease-in; /* 入慢-動畫效果 */
 }
 
-section .banner p:nth-of-type(3) a:hover, 
-section .banner p:nth-of-type(3) a:focus{   /* banner按鈕的a鏈接元素:懸停,聚焦 */
+section .banner_1 p:nth-of-type(3) a:hover, 
+section .banner_1 p:nth-of-type(3) a:focus{   /* banner按鈕的a鏈接元素:懸停,聚焦 */
     transform: scale(1.4, 1.4); /* 調整元素放大倍數(設定0可代替隱藏) */
     /* padding: 0.8em 1.6em; /* 上下邊距 0.5rem，左右邊距 1.5rem */
     border-radius: 50px; /* 圓角 */
@@ -232,16 +231,46 @@ section .banner p:nth-of-type(3) a:focus{   /* banner按鈕的a鏈接元素:懸�
     background-color: #FFF; /* 背景顏色透明 */
     opacity: 1.0; /* 透明度0.0~1.0(透明~不透明) */
 }
-section .banner p:nth-of-type(3) a:active{   /* banner按鈕的a鏈接元素:點擊 */
+section .banner_1 p:nth-of-type(3) a:active{   /* banner按鈕的a鏈接元素:點擊 */
     /* transform: translate(0, 0); /* 調整元素位置 */
     transform: scale(1.15, 1.15); /* 調整元素放大倍數(設定0可代替隱藏) */
 }
 
-
-section .info{
-    width: 1200px;
-    margin: 2rem auto;
+.product{
+    display: flex;
+    background-color: gray;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4em 0em;
 }
+.product div{
+    width: 22em;
+    text-align: center;
+    margin: 1em 0;
+    opacity: 0.8; /* 透明度0.0~1.0(透明~不透明) */
+    transition: 0.1s ease-in; /* 入慢-動畫效果 */
+}
+.product div:hover, 
+.product div:focus{   /* :懸停,聚焦 */
+    transform: scale(1.2, 1.2); /* 調整元素放大倍數(設定0可代替隱藏) */
+    cursor: pointer; /* 滑鼠移到上面時變成手指形狀 */
+    text-decoration: none;
+    color: #FFFF00;
+    opacity: 1.0; /* 透明度0.0~1.0(透明~不透明) */
+}
+.product div:active{   /* :點擊 */
+    /* transform: translate(0, 0); /* 調整元素位置 */
+    transform: scale(1.1, 1.1); /* 調整元素放大倍數(設定0可代替隱藏) */
+}
+.product img{
+    width: 100%;
+    border-radius: 10px; /* 圓角效果 */
+    aspect-ratio: 1/1; /* 1:1等比 */
+    object-fit: cover; /* 圖片平鋪 */
+    object-position: center; /* 圖片居中 */
+}
+
+
 .about{
     width: 800px;
     margin: auto;
@@ -293,16 +322,19 @@ footer .footer{
         /* border-bottom: 1px solid #CCCCCC; */
         padding: 0 0 0.6rem;
     }
-    section .banner{
+    section .banner_1{
         height: 88vh;
     }
-    section .banner h2{
+    section .banner_1 h2{
         font-size: 10.5vw;
     }
-    section .banner p{    /* :nth-of-type(1) 針對第1個p元素 */
+    section .banner_1 p{    /* :nth-of-type(1) 針對第1個p元素 */
         font-size: 3.3vw;
     }
-    section .banner a{
+    section .banner_1 a{
         font-size: 2.7rem;
+    }
+    .product{
+        flex-direction: column;
     }
 }
