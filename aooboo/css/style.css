@@ -247,7 +247,7 @@ section .banner_1 p:nth-of-type(3) a:active{   /* banner按鈕的a鏈接元素:�
     width: 22em;
     text-align: center;
     margin: 1em 0;
-    opacity: 0.8; /* 透明度0.0~1.0(透明~不透明) */
+    opacity: 0.6; /* 透明度0.0~1.0(透明~不透明) */
     transition: 0.1s ease-in; /* 入慢-動畫效果 */
 }
 .product div:hover, 
@@ -264,6 +264,7 @@ section .banner_1 p:nth-of-type(3) a:active{   /* banner按鈕的a鏈接元素:�
 }
 .product img{
     width: 100%;
+    border: 10px solid #FFF; /* 邊框顏色 */
     border-radius: 10px; /* 圓角效果 */
     aspect-ratio: 1/1; /* 1:1等比 */
     object-fit: cover; /* 圖片平鋪 */
