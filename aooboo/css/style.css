@@ -183,8 +183,32 @@ section .banner_1>p:nth-of-type(1){    /* :nth-of-type(1) 針對第1個p元素 *
     font-size: 2.2vw;
     color: #FEF7E6;
 }
+section .banner_1 button{
+    font-size: 2vw;
+    width: 8vw;
+    height: 3.5vw;
+    border: 0;
+    background-color: #003C9D;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0.1em 0.4em;
+}
+section .banner_1 button:hover,
+section .banner_1 button:focus{
+    color: #003C9D;
+    background-color: #fff;
+    border: 2px #003C9D solid;
+    transform: scale(1.1, 1.1); /* 調整元素放大倍數(設定0可代替隱藏) */
+}
+section .banner_1 button:active{   /* banner按鈕的a鏈接元素:點擊 */
+    /* transform: translate(0, 0); /* 調整元素位置 */
+    transform: scale(0.9, 0.9); /* 調整元素放大倍數(設定0可代替隱藏) */
+    transition: 0.1s ease-out; /* 出慢-動畫效果 */
+}
+
 section .banner_1>p:nth-of-type(2){ /* 針對第1個a元素 */
-    margin: 1em 0 4em; /* 邊距只能用在p元素，a元素無效 */
+    margin: 3em 0 2em; /* 邊距只能用在p元素，a元素無效 */
 }
 section .banner_1>p:nth-of-type(2) a{ /* 針對第1個a元素 */
     display: inline-block; /* ！放大需轉塊元素! 讓a元素成為行內塊元素 */
@@ -197,7 +221,6 @@ section .banner_1>p:nth-of-type(2) a{ /* 針對第1個a元素 */
     opacity: 0.6; /* 透明度0.0~1.0(透明~不透明) */
     transition: 0.3s ease-out; /* 入慢-動畫效果 */
 }
-
 section .banner_1>p:nth-of-type(2) a:hover,
 section .banner_1>p:nth-of-type(2) a:focus{ /* 針對第1個a元素:懸停,聚焦 */
     /* text-decoration: none; /* 去除a元素底線 */
@@ -210,6 +233,7 @@ section .banner_1>p:nth-of-type(2) a:focus{ /* 針對第1個a元素:懸停,聚�
 section .banner_1>p:nth-of-type(2) a:active{   /* banner按鈕的a鏈接元素:點擊 */
     transform: translate(0, 0); /* 調整元素位置 */
     /* transform: scale(1, 1); /* 調整元素放大倍數(設定0可代替隱藏) */
+    transition: 0.1s ease-out; /* 出慢-動畫效果 */
 }
 
 
@@ -240,6 +264,7 @@ section .banner_1>p:nth-of-type(3) a:focus{   /* banner按鈕的a鏈接元素:�
 section .banner_1>p:nth-of-type(3) a:active{   /* banner按鈕的a鏈接元素:點擊 */
     /* transform: translate(0, 0); /* 調整元素位置 */
     transform: scale(1.15, 1.15); /* 調整元素放大倍數(設定0可代替隱藏) */
+    transition: 0.1s ease-out; /* 出慢-動畫效果 */
 }
 
 .pre-product_2{
@@ -272,8 +297,8 @@ section .banner_1>p:nth-of-type(3) a:active{   /* banner按鈕的a鏈接元素:�
     width: 14em;
     text-align: center;
     margin: 1em 0;
-    opacity: 0.7; /* 透明度0.0~1.0(透明~不透明) */
     transition: 0.1s ease-in; /* 入慢-動畫效果 */
+    opacity: 0.7; /* 透明度0.0~1.0(透明~不透明) */
 }
 .product div:hover, 
 .product div:focus{   /* :懸停,聚焦 */
@@ -286,6 +311,7 @@ section .banner_1>p:nth-of-type(3) a:active{   /* banner按鈕的a鏈接元素:�
 .product div:active{   /* :點擊 */
     /* transform: translate(0, 0); /* 調整元素位置 */
     transform: scale(1.2, 1.2); /* 調整元素放大倍數(設定0可代替隱藏) */
+    transition: 0.1s ease-out; /* 出慢-動畫效果 */
 }
 .product img{
     width: 100%;
