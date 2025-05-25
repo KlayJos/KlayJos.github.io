@@ -190,7 +190,7 @@ section .banner_1>p:nth-of-type(1){    /* :nth-of-type(1) 針對第1個p元素 *
 section .banner_1 button{
     font-size: 1.8rem;
     font-weight: bold; /* 粗體字 */
-    padding: 0.4em 2.0em; /* 上下邊距 0.5rem，左右邊距 1.5rem */
+    padding: 0.5em 2.0em; /* 上下邊距 0.5rem，左右邊距 1.5rem */
     border: 0;
     background-color: #003C9D;
     color: #fff;
@@ -248,7 +248,7 @@ section .banner_1>p:nth-of-type(3) a{   /* banner按鈕的a鏈接元素 */
     text-decoration: none; /* 去除底線 */
     font-size: 1.8rem;
     font-weight: bold; /* 粗體字 */
-    padding: 0.4em 0.8em; /* 上下邊距 0.5rem，左右邊距 1.5rem */
+    padding: 0.6em 0.8em; /* 上下邊距 0.5rem，左右邊距 1.5rem */
     border-radius: 12px; /* 偏直角 */
     border: 1px solid #FFF; /* 邊框顏色 */
     color: white;
