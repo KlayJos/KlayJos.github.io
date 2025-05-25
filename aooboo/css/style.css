@@ -186,7 +186,7 @@ section .banner_1>p:nth-of-type(1){    /* :nth-of-type(1) 針對第1個p元素 *
 }
 section .banner_1 button{
     font-size: 1.8rem;
-    padding: 0.4em 1.0em; /* 上下邊距 0.5rem，左右邊距 1.5rem */
+    padding: 0.4em 2.0em; /* 上下邊距 0.5rem，左右邊距 1.5rem */
     border: 0;
     background-color: #003C9D;
     color: #fff;
@@ -404,12 +404,6 @@ footer .footer{
     }
     section .banner_1{
         height: 88vh;
-    }
-    section .banner_1 h2{
-        /* font-size: 10.5vw; */
-    }
-    section .banner_1>p{    /* :nth-of-type(1) 針對第1個p元素 */
-        /* font-size: 3.3vw; */
     }
     section .banner_1 a{
         font-size: 2.8rem;
