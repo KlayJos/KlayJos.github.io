@@ -175,18 +175,18 @@ section .banner_1{
     height: 92vh;
 }
 section .banner_1 h2{
-    font-size: 7vw;
+    font-size: 7rem;  /* !important */
     letter-spacing: 0.04em; /* 調整字母間距 */
     color: white;
 }
 section .banner_1>p:nth-of-type(1){    /* :nth-of-type(1) 針對第1個p元素 */
-    font-size: 2.2vw;
+    font-size: 2.2rem;
+    letter-spacing: 0.02em; /* 調整字母間距 */
     color: #FEF7E6;
 }
 section .banner_1 button{
-    font-size: 2vw;
-    width: 8vw;
-    height: 3.5vw;
+    font-size: 1.8rem;
+    padding: 0.4em 1.0em; /* 上下邊距 0.5rem，左右邊距 1.5rem */
     border: 0;
     background-color: #003C9D;
     color: #fff;
@@ -199,7 +199,7 @@ section .banner_1 button:focus{
     color: #003C9D;
     background-color: #fff;
     border: 2px #003C9D solid;
-    transform: scale(1.1, 1.1); /* 調整元素放大倍數(設定0可代替隱藏) */
+    transform: scale(1.05, 1.05); /* 調整元素放大倍數(設定0可代替隱藏) */
 }
 section .banner_1 button:active{   /* banner按鈕的a鏈接元素:點擊 */
     /* transform: translate(0, 0); /* 調整元素位置 */
@@ -406,13 +406,13 @@ footer .footer{
         height: 88vh;
     }
     section .banner_1 h2{
-        font-size: 10.5vw;
+        /* font-size: 10.5vw; */
     }
     section .banner_1>p{    /* :nth-of-type(1) 針對第1個p元素 */
-        font-size: 3.3vw;
+        /* font-size: 3.3vw; */
     }
     section .banner_1 a{
-        font-size: 2.7rem;
+        font-size: 2.8rem;
     }
     .pre-product_1{
         display: none;
